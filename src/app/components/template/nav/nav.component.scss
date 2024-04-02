@@ -1,0 +1,23 @@
+.sidenav {
+  background-color: #1d3e5f;
+  width: 200px;
+  border: 2px solid transparent;
+}
+.sidenav i {
+  padding-right: 10px;
+}
+
+.controlArrowBack {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+.controlArrowFront {
+  background-color: #1d3e5f;
+  color: #fff;
+}
+.controlArrowFront a i {
+  background-color: #1d3e5f;
+  color: #fff;
+  height: 3%;
+}
