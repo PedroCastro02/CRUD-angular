@@ -1,0 +1,32 @@
+<h2 mat-dialog-title>Adicionar Novo Veiculo</h2>
+<form action="">
+  <mat-dialog-content>
+    <div class="controleInputsConjunto">
+      <mat-form-field class="controleInputs">
+        <input matInput placeholder="Placa" name="placa" />
+      </mat-form-field>
+      <mat-form-field class="controleInputs">
+        <input matInput placeholder="cor" name="cor" />
+      </mat-form-field>
+      <mat-form-field class="controleInputs">
+        <input matInput placeholder="Preço" name="preco" />
+      </mat-form-field>
+    </div>
+    <div class="controleInputsConjunto">
+      <mat-form-field class="controleInputs">
+        <input matInput placeholder="kilometragem" name="km" />
+      </mat-form-field>
+      <mat-form-field class="controleInputs">
+        <input matInput placeholder="Marca" name="id_marca" />
+      </mat-form-field>
+      <mat-form-field class="controleInputs">
+        <input matInput placeholder="Ano De Fabricação" name="anoFabricacao" />
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+</form>
+
+<mat-dialog-actions class="controlFooter">
+  <button mat-button (click)="createVeiculo()" class="success">Salvar</button>
+  <button mat-button (click)="close()" class="info">Cancelar</button>
+</mat-dialog-actions>

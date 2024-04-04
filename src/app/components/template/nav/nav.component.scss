@@ -11,13 +11,19 @@
   display: flex;
   justify-content: flex-end;
   color: #fff;
+  cursor: pointer;
 }
-.controlArrowFront {
-  background-color: #1d3e5f;
-  color: #fff;
-}
+
 .controlArrowFront a i {
   background-color: #1d3e5f;
   color: #fff;
   height: 3%;
+  padding: 0.5%;
+  cursor: pointer;
+  border-bottom-right-radius: 20%;
+}
+.content {
+  padding: 0px 20px;
+  background-color: #fff;
+  color: #000;
 }

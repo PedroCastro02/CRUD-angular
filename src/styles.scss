@@ -5,5 +5,48 @@
   font-style: normal;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.bgAzul {
+  background-color: #1d3e5f;
+  color: #fff;
+}
+.success {
+  background-color: rgb(61, 163, 74);
+  color: #eee;
+  font-size: 17px !important;
+}
+.error {
+  background-color: rgb(177, 68, 68);
+  color: #eee;
+  font-size: 17px !important;
+}
+.warning {
+  background-color: rgb(175, 177, 68);
+  color: #eee;
+  font-size: 17px !important;
+}
+.info {
+  background-color: rgb(68, 112, 177);
+  color: #eee;
+  font-size: 17px !important;
+}
+.mat-dialog-container {
+  background-color: #1d3e5f;
+  margin-left: 10px;
+  color: #fff;
+}
+.mat-form-field-flex {
+  color: #fff;
+  margin-left: 10px;
+}
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  margin-left: 10px;
+}

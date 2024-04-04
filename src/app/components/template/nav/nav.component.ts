@@ -10,10 +10,10 @@ export class NavComponent implements OnInit {
   constructor() {}
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
 
-  esconderSidenav() {
+  esconderSidenav(): void {
     this.sidenav.close();
   }
-  abrirSidenav() {
+  abrirSidenav(): void {
     this.sidenav.open();
   }
 
