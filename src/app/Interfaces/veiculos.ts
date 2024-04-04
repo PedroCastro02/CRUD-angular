@@ -1,9 +1,9 @@
 export interface Veiculos {
-  id?: number;
-  id_marca: number;
+  id: number;
+  id_marca: number | null;
   placa: string;
   cor: string;
-  preco: number;
+  preco: number | null;
   anoFabricacao: string;
-  km: number;
+  km: number | null;
 }

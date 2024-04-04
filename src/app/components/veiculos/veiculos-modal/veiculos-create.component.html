@@ -3,24 +3,54 @@
   <mat-dialog-content>
     <div class="controleInputsConjunto">
       <mat-form-field class="controleInputs">
-        <input matInput placeholder="Placa" name="placa" />
+        <input
+          matInput
+          placeholder="Placa"
+          name="placa"
+          [(ngModel)]="veiculo.placa"
+        />
       </mat-form-field>
       <mat-form-field class="controleInputs">
-        <input matInput placeholder="cor" name="cor" />
+        <input
+          matInput
+          placeholder="cor"
+          name="cor"
+          [(ngModel)]="veiculo.cor"
+        />
       </mat-form-field>
       <mat-form-field class="controleInputs">
-        <input matInput placeholder="Preço" name="preco" />
+        <input
+          matInput
+          placeholder="Preço"
+          name="preco"
+          [(ngModel)]="veiculo.preco"
+        />
       </mat-form-field>
     </div>
     <div class="controleInputsConjunto">
       <mat-form-field class="controleInputs">
-        <input matInput placeholder="kilometragem" name="km" />
+        <input
+          matInput
+          placeholder="kilometragem"
+          name="km"
+          [(ngModel)]="veiculo.km"
+        />
       </mat-form-field>
       <mat-form-field class="controleInputs">
-        <input matInput placeholder="Marca" name="id_marca" />
+        <input
+          matInput
+          placeholder="Marca"
+          name="id_marca"
+          [(ngModel)]="veiculo.id_marca"
+        />
       </mat-form-field>
       <mat-form-field class="controleInputs">
-        <input matInput placeholder="Ano De Fabricação" name="anoFabricacao" />
+        <input
+          matInput
+          placeholder="Ano De Fabricação"
+          name="anoFabricacao"
+          [(ngModel)]="veiculo.anoFabricacao"
+        />
       </mat-form-field>
     </div>
   </mat-dialog-content>

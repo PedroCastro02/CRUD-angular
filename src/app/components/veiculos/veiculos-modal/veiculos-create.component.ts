@@ -13,12 +13,13 @@ import { AlertsService } from 'src/app/services/alerts.service';
 export class VeiculosCreateComponent implements OnInit {
   // liveForm!: FormGroup;
   veiculo: Veiculos = {
+    id: 0,
     id_marca: 21,
-    placa: '3gf5jw',
-    cor: 'vermelho',
-    preco: 245,
-    anoFabricacao: '2002/10/21',
-    km: 213124,
+    placa: '',
+    cor: '',
+    preco: null,
+    anoFabricacao: '',
+    km: null,
   };
 
   constructor(

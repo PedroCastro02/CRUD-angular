@@ -15,7 +15,7 @@ import { HomeComponent } from './views/home/home.component';
 import { VeiculosCrudComponent } from './views/veiculos-crud/veiculos-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { MyForDirective } from './directives/my-for.directive';
-import { VeiculosCreateComponent } from './components/veiculos/veiculos-create/veiculos-create.component';
+import { VeiculosCreateComponent } from './components/veiculos/veiculos-modal/veiculos-create.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatNativeDateModule } from '@angular/material/core';

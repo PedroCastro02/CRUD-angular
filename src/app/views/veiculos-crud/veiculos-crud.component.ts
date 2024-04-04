@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { VeiculosCreateComponent } from 'src/app/components/veiculos/veiculos-create/veiculos-create.component';
+import { VeiculosCreateComponent } from 'src/app/components/veiculos/veiculos-modal/veiculos-create.component';
 
 @Component({
   selector: 'app-veiculos-crud',
