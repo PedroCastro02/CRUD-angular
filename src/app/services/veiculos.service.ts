@@ -11,10 +11,7 @@ import { Basic } from '../Interfaces/Basic';
   providedIn: 'root',
 })
 export class VeiculosService extends CrudRepositoryService<Veiculos> {
-  constructor(
-    protected override http: HttpClient,
-    public alerts: AlertsService
-  ) {
+  constructor(protected override http: HttpClient) {
     super(http, 'veiculos');
   }
 
@@ -24,20 +21,10 @@ export class VeiculosService extends CrudRepositoryService<Veiculos> {
   public getAllVeiculos(): Observable<Veiculos[]> {
     return this.getAll();
   }
-  // public deleteVeiculos(item: Veiculos): Observable<Veiculos> {
-  //   return this.delete(item).subscribe(
-  //     () => {
-  //       this.alerts.showMessage('Veículo Removido com Sucesso', 'success');
-  //     },
-  //     (error) => {
-  //       this.alerts.showMessage(
-  //         'Erro ao remover veículo: ' + error.message,
-  //         'error',
-  //         5
-  //       );
-  //     }
-  //   );
-  // }
+  public deleteVeiculos(id: number): Observable<void> {
+    console.log(`deleteVeiculos entrou:${id}`);
+    return this.remove(id.toString());
+  }
   // public updateVeiculos(item: Veiculos): Observable<Veiculos> {
   //   return this.update(item, this.id).pipe();
   // }

@@ -12,6 +12,7 @@ import { AlertsService } from 'src/app/services/alerts.service';
 })
 export class VeiculosCreateComponent implements OnInit {
   // liveForm!: FormGroup;
+  veiculos: Veiculos[] = [];
   veiculo: Veiculos = {
     id: 0,
     id_marca: 21,
@@ -23,8 +24,8 @@ export class VeiculosCreateComponent implements OnInit {
   };
 
   constructor(
-    private fb: FormBuilder,
-    private veiculosService: VeiculosService,
+    // private fb: FormBuilder,
+    private VeiculosService: VeiculosService,
     public alerts: AlertsService,
     public dialogRef: MatDialogRef<VeiculosCreateComponent>
   ) {}
@@ -37,9 +38,10 @@ export class VeiculosCreateComponent implements OnInit {
     // });
   }
   createVeiculo(): void {
-    this.veiculosService.create(this.veiculo).subscribe(
+    this.VeiculosService.create(this.veiculo).subscribe(
       () => {
         this.alerts.showMessage('Veículo criado com Sucesso', 'success');
+        this.get();
         this.close();
       },
       (error) => {
@@ -50,6 +52,11 @@ export class VeiculosCreateComponent implements OnInit {
         );
       }
     );
+  }
+  get(): void {
+    this.VeiculosService.getAllVeiculos().subscribe((veiculos) => {
+      this.veiculos = veiculos;
+    });
   }
 
   close(): void {

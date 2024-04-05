@@ -27,6 +27,14 @@ export class VeiculosTableComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.get();
+  }
+  deleteVeiculoBotao(id: number): void {
+    this.VeiculosService.deleteVeiculos(id).subscribe((response: any) => {});
+    this.alerts.showMessage('Veiculo apagado com sucesso', 'success');
+    this.get();
+  }
+  get() {
     this.VeiculosService.getAllVeiculos().subscribe((veiculos) => {
       this.veiculos = veiculos;
     });
